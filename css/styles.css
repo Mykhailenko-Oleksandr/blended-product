@@ -1,0 +1,301 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #22343d;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1150px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+/* -----------HEADER--------- */
+.header {
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+  gap: 16px;
+  margin-right: 237px;
+}
+
+.header-logo-image {
+}
+
+.header-navigation {
+  margin-right: 73px;
+}
+
+.header-navigation-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-navigation-item {
+}
+
+.header-navigation-link {
+  display: block;
+  line-height: 1.75;
+  color: #22343d;
+  padding: 26px 0;
+}
+
+.current {
+  font-weight: 600;
+}
+
+.header-btn-list {
+  display: flex;
+  gap: 21px;
+}
+
+.header-btn-item {
+}
+
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #173a56;
+  min-width: 105px;
+  height: 42px;
+  border-color: transparent;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  color: #fff;
+  background-color: #02897a;
+  border-color: transparent;
+}
+
+/* -----------HEADER--------- */
+/* -----------HERO--------- */
+
+.hero {
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-box {
+}
+
+.hero-title {
+  font-size: 40px;
+  line-height: 1.5;
+  color: #22343d;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #22343d;
+}
+
+.hero-list {
+  display: flex;
+}
+
+.hero-item {
+}
+
+.hero-btn-started {
+}
+
+.hero-btn-video {
+}
+
+.hero-image {
+}
+
+/* -----------HERO--------- */
+/* -----------FEATURE--------- */
+
+.feature {
+  padding-bottom: 50px;
+}
+
+.feature-title {
+  max-width: 466px;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.feature-item {
+  flex-basis: calc((100% - 90px) / 4);
+  padding-bottom: 26px;
+}
+
+.feature-icon {
+  margin-bottom: 26px;
+}
+
+.feature-subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  color: #22343d;
+  margin-bottom: 13px;
+}
+
+.feature-text {
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+.feature-btn {
+  display: block;
+  font-family: inherit;
+  border-radius: 4px;
+  min-width: 175px;
+  height: 53px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #173a56;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.feature-btn:hover,
+.feature-btn:focus {
+  background: #02897a;
+  border-color: transparent;
+  color: #fff;
+}
+
+/* -----------FEATURE--------- */
+/* -----------BENEFITS--------- */
+
+.benefits {
+  padding-top: 91px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.benefits-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 84px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefits-text-box {
+  max-width: 486px;
+}
+
+.benefits-text-box-center {
+  max-width: 437px;
+}
+
+.benefits-text-top {
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+.benefits-subtitle {
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 25px;
+}
+
+.benefits-sublist {
+  margin-top: 30px;
+}
+
+.benefits-sublist-item {
+  margin-bottom: 25px;
+}
+
+.benefits-text {
+  font-size: 16px;
+  line-height: 1.62;
+  color: #22343d;
+}
+.benefits-subtitle-smal {
+  font-weight: 600;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 12px;
+}
+
+.benefits-image {
+}
+
+.benefits-icon {
+  margin-right: 30px;
+}
+
+.benefits-sublist-center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.benefits-sublist-center-item {
+  display: flex;
+  align-items: center;
+}
+/* -----------BENEFITS--------- */
