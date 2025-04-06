@@ -598,6 +598,8 @@ button {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   background-color: #fff;
   padding-top: 32px;
+
+  transition: background-color 250ms ease;
 }
 
 .price-item-subtitle {
@@ -628,6 +630,7 @@ button {
   color: #afafaf;
   text-align: center;
   margin-bottom: 16px;
+  transition: color 250ms ease;
 }
 
 .price-item-big-number {
@@ -673,6 +676,10 @@ button {
   margin-bottom: 30px;
 }
 
+.price-white-text-hover {
+  transition: color 250ms ease;
+}
+
 .price-item-btn {
   font-family: "Montserrat", sans-serif;
   border-radius: 8px;
@@ -685,11 +692,31 @@ button {
   border: none;
   display: block;
   margin: 0 auto;
+  transition: transform 250ms ease, background-color 250ms ease,
+    color 250ms ease;
 }
 
-/* .price-item:hover, .price-item:focus {
-  background-color: ;
-} */
+.price-item:hover {
+  background-color: #02897a;
+}
+
+.price-item:hover .price-white-text-hover {
+  color: #fff;
+}
+
+.price-item:hover .price-item-text-center {
+  color: #e0e0e0;
+}
+
+.price-item:hover .price-item-btn {
+  background-color: #fff;
+  color: #02897a;
+}
+
+.price-item-btn:hover,
+.price-item-btn:focus {
+  transform: scale(1.2);
+}
 
 /* -----------PRICE TABLE--------- */
 /* -----------FOOTER--------- */
