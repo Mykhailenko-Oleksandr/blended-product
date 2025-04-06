@@ -119,6 +119,8 @@ button {
   border-color: transparent;
   border: 1px solid #bcd0e5;
   border-radius: 4px;
+  transition: background-color 250ms ease, color 250ms ease,
+    border-color 250ms ease;
 }
 
 .header-btn:hover,
@@ -193,10 +195,16 @@ button {
   border: none;
   background-color: #fff;
   min-width: 164px;
+  transition: transform 250ms ease;
 }
 
 .hero-btn-icon {
   fill: #02897a;
+}
+
+.hero-btn-video:hover,
+.hero-btn-video:focus {
+  transform: scale(1.2);
 }
 
 .hero-image {
@@ -239,6 +247,10 @@ button {
   margin-bottom: 26px;
 }
 
+/* .feature-item:nth-child(1) .feature-icon-box {
+  background-color: #02897a;
+} */
+
 .feature-icon-box.green {
   background-color: #02897a;
 }
@@ -270,6 +282,7 @@ button {
   font-size: 16px;
   line-height: 1.625;
   color: #22343d;
+  max-width: 225px;
 }
 
 .feature-btn {
@@ -280,16 +293,18 @@ button {
   height: 53px;
   font-weight: 700;
   font-size: 16px;
-  color: #173a56;
+  color: #fff;
   margin: 0 auto;
   text-transform: uppercase;
+  border-color: transparent;
+  background-color: #02897a;
 }
 
 .feature-btn:hover,
 .feature-btn:focus {
-  background: #02897a;
+  /* background-color: #02897a;
   border-color: transparent;
-  color: #fff;
+  color: #fff; */
 }
 
 /* -----------FEATURE--------- */
@@ -398,6 +413,7 @@ button {
 }
 /* -----------BENEFITS--------- */
 /* -----------STAFF--------- */
+
 .staff {
   padding-top: 75px;
   padding-bottom: 100px;
@@ -422,7 +438,7 @@ button {
   line-height: 1.63;
   text-align: center;
   color: #22343d;
-  max-width: 465px;
+  width: 465px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -450,7 +466,7 @@ button {
   width: 281px;
   height: 50px;
   box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
-  border-radius: 24px;
+  border-radius: 25px;
 }
 
 .staff-item-text {
@@ -464,7 +480,7 @@ button {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
-  background: #02897a;
+  background-color: #02897a;
   border-radius: 4px;
   min-width: 216px;
   height: 53px;
@@ -472,8 +488,13 @@ button {
   margin: 0 auto;
 }
 
+.staff-btn:hover,
+.staff-btn:focus {
+}
+
 /* -----------STAFF--------- */
 /* -----------STRATEGIES--------- */
+
 .strategies {
   padding-bottom: 171px;
 }
@@ -526,6 +547,7 @@ button {
   font-size: 24px;
   line-height: 1.67;
   color: #22343d;
+  transition: color 250ms ease;
 }
 
 .strategies-item:hover .strategiesitem-subtitle {
@@ -533,3 +555,235 @@ button {
 }
 
 /* -----------STRATEGIES--------- */
+/* -----------PRACE TABLE--------- */
+
+/* -----------PRACE TABLE--------- */
+/* -----------FOOTER--------- */
+
+.footer-top-box {
+  position: relative;
+  /* display: flex; */
+  border-radius: 32px;
+  max-width: 968px;
+  height: 345px;
+  background-color: #02897a;
+  padding-top: 49px;
+  padding-left: 51px;
+  margin-bottom: 100px;
+}
+
+.footer-top-box-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.514;
+  color: #fff;
+  max-width: 490px;
+  margin-bottom: 46px;
+}
+
+.footer-top-box-btn {
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  transition: transform 250ms ease;
+}
+
+.footer-top-box-btn:hover,
+.footer-top-box-btn:focus {
+  transform: scale(1.1);
+}
+
+.footer-top-box-image {
+  position: absolute;
+  top: 4px;
+  right: 46px;
+}
+
+.footer-content-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+/* ----------------------------------------- */
+
+.footer-soc-menu {
+  margin-right: 146px;
+}
+
+.footer-soc-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+  margin-bottom: 18px;
+}
+
+.footer-logo {
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-item {
+}
+
+.footer-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #edfffc;
+  transition: background-color 250ms ease, fill 250ms ease;
+}
+
+.footer-soc-icon {
+  fill: #02897a;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #02897a;
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+  fill: #edfffc;
+}
+
+/* ------------------------------------ */
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-right: 83px;
+}
+
+.footer-item {
+}
+
+.footer-menu-left {
+  max-width: 118px;
+}
+
+.footer-menu-left-item {
+  width: 118px;
+}
+
+.footer-menu-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.footer-menu-link {
+  line-height: 2.19;
+  color: #22343d;
+  transition: text-shadow 50ms ease;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  text-shadow: 0.3px 0 currentColor, -0.3px 0 currentColor, 0 0.3px currentColor,
+    0 -0.3px currentColor;
+}
+
+.footer-menu-right {
+  width: 131px;
+}
+
+.footer-menu-right-item {
+}
+
+/* ------------------------------------ */
+
+.footer-form-box {
+  width: 325px;
+}
+
+.footer-form-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #22343d;
+  margin-bottom: 30px;
+}
+
+.footer-form {
+}
+
+.footer-label {
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.footer-input {
+  padding: 10px 10px 10px 42px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  line-height: 1.75;
+  outline: transparent;
+  transition: border-color 250ms ease;
+}
+
+.footer-input::placeholder {
+  color: #02897a;
+}
+
+.footer-input:focus {
+  border-color: #02897a;
+}
+
+.footer-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  fill: #02897a;
+  transform: translateY(-50%);
+}
+
+.footer-form-btn {
+  display: block;
+  min-width: 131px;
+  height: 39px;
+  background-color: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 200ms ease, transform 200ms ease;
+}
+
+.footer-form-btn:hover {
+  background-color: #026e65;
+  transform: scale(1.1);
+}
+
+.footer-text-bottom {
+  line-height: 1.88;
+  color: #22343d;
+  text-align: center;
+}
+
+/* -----------FOOTER--------- */
