@@ -181,6 +181,12 @@ button {
   font-size: 16px;
   color: #fff;
   border: none;
+  transition: transform 250ms ease;
+}
+
+.hero-btn-started:hover,
+.hero-btn-started:focus {
+  transform: scale(1.2);
 }
 
 .hero-btn-video {
@@ -298,13 +304,12 @@ button {
   text-transform: uppercase;
   border-color: transparent;
   background-color: #02897a;
+  transition: transform 250ms ease;
 }
 
 .feature-btn:hover,
 .feature-btn:focus {
-  /* background-color: #02897a;
-  border-color: transparent;
-  color: #fff; */
+  transform: scale(1.2);
 }
 
 /* -----------FEATURE--------- */
@@ -486,10 +491,12 @@ button {
   height: 53px;
   border: none;
   margin: 0 auto;
+  transition: transform 250ms ease;
 }
 
 .staff-btn:hover,
 .staff-btn:focus {
+  transform: scale(1.2);
 }
 
 /* -----------STAFF--------- */
@@ -555,9 +562,136 @@ button {
 }
 
 /* -----------STRATEGIES--------- */
-/* -----------PRACE TABLE--------- */
+/* -----------PRICE TABLE--------- */
 
-/* -----------PRACE TABLE--------- */
+.price {
+  margin-bottom: 100px;
+}
+
+.price-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.price-text {
+  font-weight: 500;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.price-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+
+.price-item {
+  flex-basis: calc((100% - 144px) / 3);
+  border-radius: 8px;
+  max-width: 322px;
+  height: 456px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  padding-top: 32px;
+}
+
+.price-item-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.price-item-text-top {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.5;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.price-item-text-center {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.price-item-big-number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.32;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+}
+
+.price-item-dollar-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.price-item-dollar {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  color: #02897a;
+}
+
+.price-item-text-bottom {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  text-align: center;
+}
+
+.price-item-text-bottom:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.price-item-text-bottom:last-of-type {
+  margin-bottom: 30px;
+}
+
+.price-item-btn {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  min-width: 139px;
+  height: 44px;
+  background-color: #02897a;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+/* .price-item:hover, .price-item:focus {
+  background-color: ;
+} */
+
+/* -----------PRICE TABLE--------- */
 /* -----------FOOTER--------- */
 
 .footer-top-box {
@@ -609,6 +743,7 @@ button {
   justify-content: space-between;
   margin-bottom: 16px;
 }
+
 /* ----------------------------------------- */
 
 .footer-soc-menu {
