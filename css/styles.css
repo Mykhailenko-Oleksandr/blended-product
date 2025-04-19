@@ -4,6 +4,10 @@ body {
   background-color: #fff;
 }
 
+main {
+  flex-grow: 1;
+}
+
 a {
   text-decoration: none;
 }
@@ -26,6 +30,8 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -33,7 +39,7 @@ button {
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 389px;
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
@@ -51,6 +57,12 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    max-width: 1150px;
+  }
 }
 
 /* -----------HEADER--------- */
@@ -72,13 +84,26 @@ button {
   line-height: 0.93;
   color: #173a56;
   gap: 16px;
-  margin-right: 283px;
 }
 
 .header-logo-image {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.header-menu-btn {
+  background-color: transparent;
+  border: none;
+  width: 28px;
+  height: 31px;
+}
+
+.header-menu-btn-icon {
+  fill: #173a56;
 }
 
 .header-navigation {
+  display: none;
   margin-right: 73px;
 }
 
@@ -102,8 +127,7 @@ button {
 }
 
 .header-btn-list {
-  display: flex;
-  gap: 21px;
+  display: none;
 }
 
 .header-btn-item {
@@ -129,6 +153,25 @@ button {
   color: #fff;
   background-color: #02897a;
   border-color: transparent;
+}
+
+@media screen and (min-width: 1150px) {
+  .header-logo {
+    margin-right: 283px;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-navigation {
+    display: block;
+  }
+
+  .header-btn-list {
+    display: flex;
+    gap: 21px;
+  }
 }
 
 /* -----------HEADER--------- */
